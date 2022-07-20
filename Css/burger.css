@@ -1,0 +1,33 @@
+.burger {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--f-color);
+}
+
+.burger__icon {
+    width: 30px;
+    position: relative;
+
+    transform: Rotate(-45deg);
+}
+.burger__icon:before { top:    -7px; }
+.burger__icon:after  { bottom: -7px; }
+.burger__icon:before, .burger__icon:after {
+    content: '';
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 17px;
+}
+.burger__icon, .burger__icon:before, .burger__icon:after{
+    height: 2px;
+
+    background-color: var(--bg);
+}

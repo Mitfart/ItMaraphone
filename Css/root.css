@@ -1,0 +1,33 @@
+:root {
+    --f-size: 17px;
+    --f-line-height: 20px;
+    --f-family: 'Gilroy';
+
+    --f-color: #262525;
+    --f-color-disable: #505050;
+    --f-color-accent: #D88F5E;
+
+    --bg: #fff;
+    --bg-alt: #F0F0F0;
+    --bg-accent: #EBD8CC;
+}
+
+
+* {
+    color: var(--f-color);
+    font-size: var(--f-size);
+
+    font-family: var(--f-family);
+    line-height: var(--f-line-height);
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    // overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
