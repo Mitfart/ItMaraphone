@@ -10,4 +10,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    position: relative;
+}
+
+.menu__item {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+
+    padding: 6px;
+    margin: 25px;
+}
+
+#manu__marker {
+    background: var(--f-color-accent);
+
+    height: 4px;
+    width: 0;
+
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+
+    transition: .3s;
+}
+
+
+.menu_vertical {
+
 }
