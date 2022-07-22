@@ -1,7 +1,8 @@
 :root {
     --f-size: 17px;
     --f-line-height: 20px;
-    --f-family: 'Gilroy';
+    --f-family-main: 'Gilroy';
+    --f-family-add: 'Roboto';
 
     --f-color: #262525;
     --f-color-disable: #505050;
@@ -10,14 +11,15 @@
     --bg: #fff;
     --bg-alt: #F0F0F0;
     --bg-accent: #EBD8CC;
+
+    --container-w: 1800px;
 }
 
 
 * {
-    color: var(--f-color);
-    font-size: var(--f-size);
-
-    font-family: var(--f-family);
+    color:       var(--f-color);
+    font-size:   var(--f-size);
+    font-family: var(--f-family-main);
     line-height: var(--f-line-height);
 }
 
@@ -26,8 +28,15 @@ body {
     width: 100vw;
     height: 100vh;
 
-    // overflow: hidden;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    width: 97%;
+    max-width: var(--container-w);
+    margin: auto;
 }

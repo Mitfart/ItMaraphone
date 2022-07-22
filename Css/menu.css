@@ -21,9 +21,11 @@
 
     padding: 6px;
     margin: 25px;
+
+    white-space: nowrap;
 }
 
-#manu__marker {
+.menu__marker {
     background: var(--f-color-accent);
 
     height: 4px;
@@ -34,9 +36,4 @@
     bottom: 12px;
 
     transition: .3s;
-}
-
-
-.menu_vertical {
-
 }

@@ -1,4 +1,126 @@
 .main {
-    background-color: var(--bg-alt);
     display: flex;
+    height: 100%;
+}
+
+
+
+.main__tabs {
+    background-color: var(--bg);
+    flex: 1;
+    height: 100%;
+
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items:     start;
+}
+
+.main__tab {
+    color:       var(--f-color-disable);
+    font-family: var(--f-family-add   );
+
+    margin: 15px 0;
+    padding: 6px;
+
+    font-weight: 300;
+    font-size:   13px;
+    line-height: 15px;
+    white-space: nowrap;
+
+    position: relative;
+
+    transition: .3s;
+    z-index: 1;
+}
+
+.main__tab:after {
+    content: '';
+
+    background-color: var(--bg-accent);
+    width: 0;
+    height: 9px;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    transition: inherit;
+    z-index: -1;
+}
+
+.main__tab:hover::after,
+.main__tab_active:after { width: 100%; }
+
+.main__tab_active {
+    color: var(--f-color);
+
+    font-weight: 700;
+    font-size:   14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+
+
+.main__text-slides,.main__picture-slides {
+    position: relative;
+    flex: 3;
+}
+
+.main__text-slide ,.main__picture-slide  {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+.main__text-slides { background-color: var(--bg-alt); }
+
+.main__text-slide {
+    color: transparent;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 25%;
+}
+
+.main__text-slide_active { color: var(--f-color); }
+
+.main__title {
+    color: inherit;
+
+    font-weight: 700;
+    font-size:   44px;
+    line-height: 53px;
+    text-transform: uppercase;
+
+    margin-bottom: 40px;
+}
+
+.main__text {
+    color: inherit;
+
+    font-family: var(--f-family-add);
+    font-weight: 400;
+    font-size:   18px;
+    line-height: 30px;
+}
+
+.main__picture-slide > img {
+    opacity: 0;
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main__picture-slide_active > img {
+    opacity: 1;
+}
+
+.main__counter {
+    position: absolute;
 }
