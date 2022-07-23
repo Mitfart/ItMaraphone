@@ -1,18 +1,20 @@
-window.onload = function(){
-    const menuClass       = '.menu';
+window.addEventListener('load', e => {
+    const menuClass       = 'menu';
     const markerClass     = menuClass + '__marker';
     const itemClass       = menuClass + '__item';
     const activeItemClass = menuClass + '__item_active';
 
 
-    const menus = document.querySelectorAll(menuClass);
+    const menus = document.querySelectorAll('.'+menuClass);
 
     menus.forEach(menu => {
-        const marker   = menu.querySelector(markerClass);
+        const marker = menu.querySelector('.'+markerClass);
         if (marker == null) return;
 
-        const items    = menu.querySelectorAll(itemClass);
-        let activeItem = menu.querySelector   (activeItemClass);
+        console.log(marker)
+
+        const items    = menu.querySelectorAll('.'+itemClass);
+        let activeItem = menu.querySelector('.'+activeItemClass);
 
         let hoveredItem = activeItem;
         let setHoverTO = null;
@@ -66,4 +68,4 @@ window.onload = function(){
             setIndicator();
         }
     });
-}
+});

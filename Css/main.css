@@ -4,7 +4,6 @@
 }
 
 
-
 .main__tabs {
     background-color: var(--bg);
     flex: 1;
@@ -62,7 +61,6 @@
 }
 
 
-
 .main__text-slides,.main__picture-slides {
     position: relative;
     flex: 3;
@@ -109,6 +107,7 @@
     line-height: 30px;
 }
 
+
 .main__picture-slide > img {
     opacity: 0;
 
@@ -121,6 +120,10 @@
     opacity: 1;
 }
 
+
 .main__counter {
     position: absolute;
+
+    left: 25%;
+    bottom: 20%;
 }
