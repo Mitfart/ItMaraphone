@@ -1,10 +1,11 @@
-.main {
+.slider {
     display: flex;
     height: 100%;
+    width: 100%;
 }
 
 
-.main__tabs {
+.slider__tabs {
     background-color: var(--bg);
     flex: 1;
     height: 100%;
@@ -15,7 +16,7 @@
     align-items:     start;
 }
 
-.main__tab {
+.slider__tab {
     color:       var(--f-color-disable);
     font-family: var(--f-family-add   );
 
@@ -25,7 +26,6 @@
     font-weight: 300;
     font-size:   13px;
     line-height: 15px;
-    white-space: nowrap;
 
     position: relative;
 
@@ -33,7 +33,7 @@
     z-index: 1;
 }
 
-.main__tab:after {
+.slider__tab:after {
     content: '';
 
     background-color: var(--bg-accent);
@@ -48,10 +48,12 @@
     z-index: -1;
 }
 
-.main__tab:hover::after,
-.main__tab_active:after { width: 100%; }
+.slider__tab:hover::after,
+.slider__tab_active:after {
+    width: 100%;
+}
 
-.main__tab_active {
+.slider__tab_active {
     color: var(--f-color);
 
     font-weight: 700;
@@ -61,23 +63,25 @@
 }
 
 
-.main__text-slides,.main__picture-slides {
+.slider__text-slides,
+.slider__picture-slides {
     position: relative;
     flex: 3;
+    background-color: var(--bg-alt);
 }
 
-.main__text-slide ,.main__picture-slide  {
+.slider__text-slide,
+.slider__picture-slide  {
     width: 100%;
     height: 100%;
 
     position: absolute;
+
+    transition: .3s;
+    opacity: 0;
 }
 
-.main__text-slides { background-color: var(--bg-alt); }
-
-.main__text-slide {
-    color: transparent;
-
+.slider__text-slide {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,9 +89,9 @@
     padding: 0 25%;
 }
 
-.main__text-slide_active { color: var(--f-color); }
 
-.main__title {
+
+.slider__title {
     color: inherit;
 
     font-weight: 700;
@@ -98,7 +102,7 @@
     margin-bottom: 40px;
 }
 
-.main__text {
+.slider__text {
     color: inherit;
 
     font-family: var(--f-family-add);
@@ -108,22 +112,21 @@
 }
 
 
-.main__picture-slide > img {
-    opacity: 0;
 
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.main__picture-slide_active > img {
-    opacity: 1;
-}
-
-
-.main__counter {
+.slider__counter {
     position: absolute;
 
     left: 25%;
     bottom: 20%;
+}
+
+
+
+.slider__picture-slide_active {
+    opacity: 1;
+}
+
+.slider__text-slide_active {
+    color: var(--f-color);
+    opacity: 1;
 }

@@ -1,6 +1,7 @@
 .menu{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .menu__items {

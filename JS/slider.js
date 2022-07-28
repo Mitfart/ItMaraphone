@@ -1,26 +1,26 @@
 window.addEventListener('load', e => {
-    const mainClass         = 'main';
+    const slider         = 'slider';
 
-    const tabClass          = mainClass + '__tab';
-    const tabActiveClass    = tabClass  + '_active';
+    const tabClass       = slider   + '__tab';
+    const tabActiveClass = tabClass + '_active';
 
-    const textSlideClass          = mainClass + '__text-slide';
-    const pictureSlideClass       = mainClass + '__picture-slide';
+    const textSlideClass          = slider + '__text-slide';
+    const pictureSlideClass       = slider + '__picture-slide';
     const textActiveSlideClass    = textSlideClass    + '_active';
     const pictureActiveSlideClass = pictureSlideClass + '_active';
 
-    const counterClass      = mainClass + '__counter';
+    const counterClass      = slider + '__counter';
 
 
-    const mains = document.querySelectorAll('.'+mainClass);
-    mains.forEach(main => {
-        const counter       = main.querySelector('.'+counterClass);
+    const sliders = document.querySelectorAll('.'+slider);
+    sliders.forEach(s => {
+        const counter       = s.querySelector('.'+counterClass);
 
-        const tabs          = main.querySelectorAll('.'+tabClass);
-        const textSlides    = main.querySelectorAll('.'+textSlideClass);
-        const pictureSlides = main.querySelectorAll('.'+pictureSlideClass);
+        const tabs          = s.querySelectorAll('.'+tabClass);
+        const textSlides    = s.querySelectorAll('.'+textSlideClass);
+        const pictureSlides = s.querySelectorAll('.'+pictureSlideClass);
 
-        let activeTab          = main.querySelector('.'+tabActiveClass);
+        let activeTab       = s.querySelector('.'+tabActiveClass);
 
         for (let i = 0; i < tabs.length; i++) {
             const tab = tabs[i];

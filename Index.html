@@ -15,12 +15,12 @@
 
 
     <link rel="stylesheet" href="./Css/header.css">
-    <link rel="stylesheet" href="./Css/main.css">
+    <link rel="stylesheet" href="./Css/slider.css">
     <link rel="stylesheet" href="./Css/footer.css">
 
     <link rel="stylesheet" href="./Css/root.css">
-
 </head>
+
 
 <body>
 <header class="header">
@@ -29,7 +29,7 @@
     </div>
 
     <nav class="menu header__menu">
-        <a href="#" class="header__title"> Первомайская </a>
+        <a href="#" class="header__title">Первомайская</a>
 
         <ul class="menu__items">
             <nav class="menu__marker"></nav>
@@ -47,67 +47,55 @@
     </div>
 </header>
 
-<main class="main container">
+<main class="main">
+    <div class="slider container">
+        <nav class="slider__tabs">
+            <a class="slider__tab slider__tab_active">Архитектура</a>
+            <a class="slider__tab">Благоустройство</a>
+            <a class="slider__tab">Безопастность</a>
+            <a class="slider__tab">Инженерия</a>
+            <a class="slider__tab">Инфраструктура</a>
+            <a class="slider__tab">Транспортная доступность</a>
+        </nav>
 
-    <nav class="main__tabs">
-        <a href="#" class="main__tab main__tab_active">Архитектура</a>
-        <a href="#" class="main__tab">Благоустройство</a>
-        <a href="#" class="main__tab">Безопастность</a>
-        <a href="#" class="main__tab">Инженерия</a>
-        <a href="#" class="main__tab">Инфраструктура</a>
-        <a href="#" class="main__tab">Транспортная доступность</a>
-    </nav>
+        <div class="slider__text-slides">
+            <nav class="slider__counter">X/X</nav>
 
-    <div class="main__text-slides">
-        <nav class="main__counter">X/X</nav>
+            <div class="slider__text-slide">
+                <h1 class="slider__title">Архитектура</h1>
+                <span class="slider__text">Оригинальная архитектура жилого комплекса бизнес-класса «Первомайская» формирует современный стиль жизни</span>
+            </div>
+            <div class="slider__text-slide">
+                <h1 class="slider__title">Безопасность</h1>
+                <span class="slider__text">Современный двор европейского уровня — территория для детей, игр на свежем воздухе и вечерних</span>
+            </div>
+            <div class="slider__text-slide">
+                <h1 class="slider__title">Благоустройство</h1>
+                <span class="slider__text">Запроектированные большие окна, которые пропускают много солнечного света, наполнят Ваши квартиры теплотой и уютом</span>
+            </div>
+            <div class="slider__text-slide">
+                <h1 class="slider__title">Инженерия</h1>
+                <span class="slider__text">Оригинальная архитектура жилого комплекса бизнес-класса «Первомайская» формирует современный стиль жизни</span>
+            </div>
+            <div class="slider__text-slide">
+                <h1 class="slider__title">Инфраструктура</h1>
+                <span class="slider__text">Прекрасный вариант для тех, кто предпочитает жить в спокойном районе среди интеллигенции, но при этом чувствовать ритм мегаполиса</span>
+            </div>
+            <div class="slider__text-slide">
+                <h1 class="slider__title">Транспортная доступность</h1>
+                <span class="slider__text">Жилой комплекс «Первомайска» расположен в престижном Академическом районе</span>
+            </div>
+        </div>
 
-        <div class="main__text-slide">
-            <h1 class="main__title">Архитектура</h1>
-            <span class="main__text">Оригинальная архитектура жилого комплекса бизнес-класса «Первомайская» формирует современный стиль жизни</span>
-        </div>
-        <div class="main__text-slide">
-            <h1 class="main__title">Безопасность</h1>
-            <span class="main__text">Современный двор европейского уровня — территория для детей, игр на свежем воздухе и вечерних</span>
-        </div>
-        <div class="main__text-slide">
-            <h1 class="main__title">Благоустройство</h1>
-            <span class="main__text">Запроектированные большие окна, которые пропускают много солнечного света, наполнят Ваши квартиры теплотой и уютом</span>
-        </div>
-        <div class="main__text-slide">
-            <h1 class="main__title">Инженерия</h1>
-            <span class="main__text">Оригинальная архитектура жилого комплекса бизнес-класса «Первомайская» формирует современный стиль жизни</span>
-        </div>
-        <div class="main__text-slide">
-            <h1 class="main__title">Инфраструктура</h1>
-            <span class="main__text">Прекрасный вариант для тех, кто предпочитает жить в спокойном районе среди интеллигенции, но при этом чувствовать ритм мегаполиса</span>
-        </div>
-        <div class="main__text-slide">
-            <h1 class="main__title">Транспортная доступность</h1>
-            <span class="main__text">Жилой комплекс «Первомайска» расположен в престижном Академическом районе</span>
+        <div class="slider__picture-slides">
+            <div class="slider__picture-slide" style="background-image: url('./Img/Архитектура.jpg')"></div>
+            <div class="slider__picture-slide" style="background-image: url('./Img/Безопасность.jpg')"></div>
+            <div class="slider__picture-slide" style="background-image: url('./Img/Благоустройство.jpg')"></div>
+            <div class="slider__picture-slide" style="background-image: url('./Img/Инженерия.jpg')"></div>
+            <div class="slider__picture-slide" style="background-image: url('./Img/Инфраструктура.jpg')"></div>
+            <div class="slider__picture-slide" style="background-image: url('./Img/Транспортная доступность.jpg')"></div>
         </div>
     </div>
-
-    <div class="main__picture-slides">
-        <div class="main__picture-slide">
-            <img src="./Img/Архитектура.jpg" alt="No Image">
-        </div>
-        <div class="main__picture-slide">
-            <img src="./Img/Безопасность.jpg" alt="No Image">
-        </div>
-        <div class="main__picture-slide">
-            <img src="./Img/Благоустройство.jpg" alt="No Image">
-        </div>
-        <div class="main__picture-slide">
-            <img src="./Img/Инженерия.jpg" alt="No Image">
-        </div>
-        <div class="main__picture-slide">
-            <img src="./Img/Инфраструктура.jpg" alt="No Image">
-        </div>
-        <div class="main__picture-slide">
-            <img src="./Img/Транспортная%20доступность.jpg" alt="No Image">
-        </div>
-    </div>
-
 </main>
 
 <footer class="footer">
@@ -115,10 +103,9 @@
         <p class="footer__context">Разработано в MST <span class="footer__separator">|</span> 2018</p>
     </div>
 </footer>
-
 </body>
 
-<script src="./JS/marker.js" type="text/javascript"></script>
-<script src="./JS/main.js" type="text/javascript"></script>
 
+<script src="./JS/marker.js" type="text/javascript"></script>
+<script src="./JS/slider.js" type="text/javascript"></script>
 </html>

@@ -23,6 +23,11 @@
     line-height: var(--f-line-height);
 }
 
+a {
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+}
 
 body {
     width: 100vw;
@@ -39,4 +44,9 @@ body {
     width: 97%;
     max-width: var(--container-w);
     margin: auto;
+}
+
+.main {
+    display: flex;
+    height: 100%;
 }
