@@ -11,8 +11,6 @@ window.addEventListener('load', e => {
         const marker = menu.querySelector('.'+markerClass);
         if (marker == null) return;
 
-        console.log(marker)
-
         const items    = menu.querySelectorAll('.'+itemClass);
         let activeItem = menu.querySelector('.'+activeItemClass);
 
@@ -20,7 +18,12 @@ window.addEventListener('load', e => {
         let setHoverTO = null;
         let setHoverToActiveTO = null;
 
-        setIndicator(activeItem);
+        const markerTransitionTime = window
+            .getComputedStyle(marker).transitionDuration
+            .replace('s', '') * 1000;
+
+
+        setStartIndicator(activeItem);
 
         items.forEach(item => {
             item.addEventListener('click', e => {
@@ -45,11 +48,22 @@ window.addEventListener('load', e => {
             });
         });
 
+        function setStartIndicator(item) {
+            marker.style.transitionDuration = '0s';
+            setIndicator(item);
+            setTimeout(()=> {
+                marker.style.transitionDuration = markerTransitionTime + 'ms';
+            }, markerTransitionTime);
+        }
 
-        const markerTransitionTime = window
-            .getComputedStyle(marker).transitionDuration
-            .replace('s', '') * 1000;
 
+        function setActiveItem(item) {
+            activeItem.classList.remove(activeItemClass);
+            item.classList.add(activeItemClass);
+            activeItem = item;
+
+            setIndicator();
+        }
 
         function setIndicator(item) {
             const pos      = Math.min(item.offsetLeft, hoveredItem.offsetLeft);
@@ -58,14 +72,6 @@ window.addEventListener('load', e => {
 
             marker.style.left  = pos   + 'px';
             marker.style.width = width + 'px';
-        }
-
-        function setActiveItem(item) {
-            activeItem.classList.remove(activeItemClass);
-            item.classList.add(activeItemClass);
-            activeItem = item;
-
-            setIndicator();
         }
     });
 });

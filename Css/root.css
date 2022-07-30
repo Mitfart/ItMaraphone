@@ -41,12 +41,8 @@ body {
 }
 
 .container {
-    width: 97%;
     max-width: var(--container-w);
-    margin: auto;
+    margin: 0 3.125vw;
 }
 
-.main {
-    display: flex;
-    height: 100%;
-}
+

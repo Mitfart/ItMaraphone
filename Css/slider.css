@@ -7,7 +7,7 @@
 
 .slider__tabs {
     background-color: var(--bg);
-    flex: 1;
+    flex: 1.2;
     height: 100%;
 
     display: flex;
@@ -67,7 +67,6 @@
 .slider__picture-slides {
     position: relative;
     flex: 3;
-    background-color: var(--bg-alt);
 }
 
 .slider__text-slide,
@@ -76,6 +75,7 @@
     height: 100%;
 
     position: absolute;
+    background-size: cover;
 
     transition: .3s;
     opacity: 0;
