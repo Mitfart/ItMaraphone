@@ -1,5 +1,5 @@
 # ItMaraphone
-###### Проект для олимпиады ***ItMaraphone*** ( [git-page][PAGE] )
+###### Проект для олимпиады ***ItMaraphone*** ( [git-page](https://mitfart.github.io/ItMaraphone/) )
 
 ### Использовались
 
@@ -19,15 +19,10 @@
 <br/>
 
 ### Проблемы при разработке
-1. Была идея за это время выучить [VUE][VUE], но я переоценил свои силы, 
+1. Была идея за это время выучить [VUE](https://ru.vuejs.org/index.html),
+но я переоценил свои силы, 
 в результате проект написан, максимально по-студенчески
 2. Исполнение скриптов, до загрузки **DOM**, была решена через *Google*
 3. Незнание того, как обрезать текст
 4. Добавление объекта в **HTML**, помог:
-[learn.javascript.ru][JSru]
-
-
-
-[PAGE]: (https://mitfart.github.io/ItMaraphone/)
-[VUE]: (https://ru.vuejs.org/index.html)
-[JSru]: (https://learn.javascript.ru/modifying-document)
+[learn.javascript.ru](https://learn.javascript.ru/modifying-document)
