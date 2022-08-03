@@ -1,12 +1,10 @@
 # ItMaraphone
-###### Проект для олимпиады ***ItMaraphone***
+###### Проект для олимпиады ***ItMaraphone*** ( [git-page](PAGE) )
 
 ### Использовались
 
 - чистый JS
 - чистый CSS
-
-###### не хотелось усложнять то,что усложнения не требует
 
 ### Особенности
 - **Анимация** перелистывания слайдов - сделана своя, 
@@ -31,6 +29,6 @@
 
 
 
-
+[PAGE]: 
 [VUE]: https://ru.vuejs.org/index.html
 [JSru]: https://learn.javascript.ru/modifying-document
