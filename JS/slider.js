@@ -9,7 +9,7 @@ window.addEventListener('load', e => {
     const textActiveSlideClass    = textSlideClass    + '_active';
     const pictureActiveSlideClass = pictureSlideClass + '_active';
 
-    const counterClass      = slider + '__counter';
+    const counterClass = slider + '__counter';
 
 
     const sliders = document.querySelectorAll('.'+slider);

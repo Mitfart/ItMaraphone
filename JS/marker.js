@@ -5,9 +5,7 @@ window.addEventListener('load', e => {
     const activeItemClass = menuClass + '__item_active';
 
 
-    const menus = document.querySelectorAll('.'+menuClass);
-
-    menus.forEach(menu => {
+    document.querySelectorAll('.'+menuClass).forEach(menu => {
         const marker = menu.querySelector('.'+markerClass);
         if (marker == null) return;
 
@@ -18,12 +16,15 @@ window.addEventListener('load', e => {
         let setHoverTO = null;
         let setHoverToActiveTO = null;
 
-        const markerTransitionTime = window
-            .getComputedStyle(marker).transitionDuration
-            .replace('s', '') * 1000;
+        const time = parseFloat(window.getComputedStyle(marker).transitionDuration);
+        const markerTransitionTime = time > 10 ? time : time * 1000;
 
 
         setStartIndicator(activeItem);
+        window.addEventListener("resize", () => {
+            setStartIndicator(activeItem);
+        });
+
 
         items.forEach(item => {
             item.addEventListener('click', e => {
