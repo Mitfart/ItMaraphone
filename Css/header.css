@@ -20,7 +20,7 @@
     margin: 0 25px;
 
     transform: translateY(25px);
-    transition: .3s;
+    transition: .1s;
     cursor: pointer;
 }
 .header__logo:hover,
@@ -41,7 +41,7 @@
     font-weight: 700;
     text-transform: uppercase;
 
-    transition: .3s;
+    transition: .1s;
 }
 
 .header__title:after,

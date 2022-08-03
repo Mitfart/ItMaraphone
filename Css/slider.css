@@ -31,7 +31,7 @@
 
     position: relative;
 
-    transition: .3s;
+    transition: .1s;
     z-index: 1;
 }
 
@@ -79,7 +79,7 @@
     position: absolute;
     background-size: cover;
 
-    transition: .3s;
+    transition: .1s;
 
     top: -100%;
 }
