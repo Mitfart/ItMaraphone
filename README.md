@@ -28,6 +28,6 @@
 
 
 
-[PAGE]: https://mitfart.github.io/ItMaraphone/
-[VUE]: https://ru.vuejs.org/index.html
-[JSru]: https://learn.javascript.ru/modifying-document
+[PAGE]: (https://mitfart.github.io/ItMaraphone/)
+[VUE]: (https://ru.vuejs.org/index.html)
+[JSru]: (https://learn.javascript.ru/modifying-document)
